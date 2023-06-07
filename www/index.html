@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="./components/loader.js"></script>
+<script src="motor.js"></script>
+<style>
+    body{
+        margin: 50px;
+	    padding: 0;
+        background-color: lightblue;
+    }
+    h1{
+        font-family: Baskerville;
+        color: darkblue;
+        font-size: 50px;
+    }
+    button{
+        height: 50px;
+        width: 80px;
+        color: black;
+        font-size: 20px;
+        font-family: garamound;
+}
+</style>
+<body>
+    <div id="inserts">
+        <h1>Insira as informações abaixo:</h1>
+        <input type="text" placeholder="Nome do aluno" class="inputtext" id="inputnome"> 
+        <p></p>
+        <label>Disciplina:</label>
+        <select id="disciplina">
+            <option>Espanhol</option>
+            <option>Ingles</option>
+            <option>Marketing</option>
+            <option>DTCC</option>
+            <option>GameArt</option>
+            <option>Animação</option>
+            <option>LP II</option>
+            <option>LPL</option>
+            <option>Ética</option>
+            <option>Sociologia</option>
+            <option>TLBD</option>
+        </select>
+        <p></p>
+        <label>Menção</label>
+        <select id="mencao">
+            <option>MB</option>
+            <option>B</option>
+            <option>R</option>
+            <option>I</option>
+        </select>
+        <br>
+        <br>
+        <input type="button" value="Enviar" onclick="enviar()">
+        <input type="button" value="Listar" onclick="listar()">
+
+    </div>
+    <div id="saida">
+        <p id="nomealuno"></p>
+        <p id="exibirdisciplina"></p>
+        <p id="exibirmencao"></p>
+    </div>
+    <p></p>
+    
+</body>
+</html>
